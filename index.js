@@ -9,7 +9,7 @@ app.use(morgan('tiny'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, 'pubic/index.html'));
 });
 
 app.listen(PORT, () => {
